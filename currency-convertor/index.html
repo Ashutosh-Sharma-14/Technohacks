@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap-div">
+        <div class="back-top">
+            <div class="heading">
+                <h1>Currency Convertor</h1>
+            </div>
+            <div class="info-text">
+                <h6>Need to make an international business payment. Take a look at our live foreign exchange rates.
+                </h6>
+            </div>
+        </div>
+        <div class="conversion-box">
+            <h3 class="conversion-box-heading">Make fast and affordable <br>
+                international business payments
+            </h3>
+            <div class="exchange-box">
+                <div class="exchange-box-1">
+                    <div class="col1">
+                        <div class="amount">
+                            <label name="amount1" for="amount1" id="amount-text">Amount</label><br>
+                            <div class="input-container">
+                                <input class="amount-input" type="number" id="amount1">
+                                <div class="currency-select">
+                                <select id="currencySelect1" onchange="updateOption(this)">
+                                    <option value="">----</option>
+                                    <option value="USD ($)">United States Dollar (USD) $</option>
+                                    <option value="EUR (€)">Euro (EUR) €</option>
+                                    <option value="JPY (¥)">Japanese Yen (JPY) ¥</option>
+                                    <option value="GBP (£)">British Pound (GBP) £</option>
+                                    <option value="CAD ($)">Canadian Dollar (CAD) $</option>
+                                    <option value="AUD ($)">Australian Dollar (AUD) $</option>
+                                    <option value="CHF (Fr)">Swiss Franc (CHF) Fr</option>
+                                    <option value="CNY (¥)">Chinese Yuan (CNY) ¥</option>
+                                    <option value="INR (₹)">Indian Rupee (INR) ₹</option>
+                                    <!-- Add more options here -->
+                                  </select>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- <div class="currency1">
+
+                        </div> -->
+                    </div>
+                    <div class="col2">
+                        <svg class="exchange-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 1" viewBox="0 0 512 512" id="dollar-and-rupees-exchange"><defs><linearGradient id="a" x1="136.458" x2="136.458" y1="9.879" y2="484.391" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00efd1"></stop><stop offset="1" stop-color="#00acea"></stop></linearGradient><linearGradient id="b" x1="136.411" x2="136.411" y1="9.879" y2="484.391" xlink:href="#a"></linearGradient><linearGradient id="c" x1="375.542" x2="375.542" y1="9.879" y2="484.391" xlink:href="#a"></linearGradient><linearGradient id="d" x1="245.573" x2="245.573" y1="9.879" y2="484.391" xlink:href="#a"></linearGradient><linearGradient id="e" x1="266.427" x2="266.427" y1="9.879" y2="484.391" xlink:href="#a"></linearGradient></defs><g data-name="<Group>"><path fill="url(#a)" d="M251.09,256A114.633,114.633,0,1,0,136.458,370.633,114.762,114.762,0,0,0,251.09,256ZM41.825,256a94.633,94.633,0,1,1,94.633,94.633A94.74,94.74,0,0,1,41.825,256Z" data-name="<Compound Path>"></path><path fill="url(#b)" d="M146,313.347v-3.016a32.319,32.319,0,0,0,23.3-31.444A32.9,32.9,0,0,0,136.435,246a12.887,12.887,0,1,1,12.906-12.887,9.978,9.978,0,1,0,19.956,0A32.318,32.318,0,0,0,146,201.669v-8.23a10,10,0,1,0-20,0v8.471A32.891,32.891,0,0,0,136.435,266a12.887,12.887,0,1,1-12.867,12.887,10.022,10.022,0,0,0-20.044,0A32.987,32.987,0,0,0,126,310.09v3.257a10,10,0,0,0,20,0Z" data-name="<Path>"></path><path fill="url(#c)" d="M375.542,141.367A114.633,114.633,0,1,0,490.175,256,114.762,114.762,0,0,0,375.542,141.367Zm0,209.266A94.633,94.633,0,1,1,470.175,256,94.74,94.74,0,0,1,375.542,350.633Z" data-name="<Compound Path>"></path><path fill="url(#c)" d="M419.377,204a10,10,0,0,0-10-10H341.708a10,10,0,0,0,0,20h19.341c6.828,0,12.81,4,16.171,9H341.708a10,10,0,0,0,0,20h35.536a33.615,33.615,0,0,1-2.725,3.451A18.9,18.9,0,0,1,361.049,252H341.708a10.082,10.082,0,0,0-6.873,17.377l48.38,45.793a9.994,9.994,0,1,0,13.745-14.511l-30.519-28.875a38.8,38.8,0,0,0,22.221-11.117A37,37,0,0,0,398.8,243h10.581a10,10,0,0,0,0-20H398.784a46.443,46.443,0,0,0-3.671-9h14.264A10,10,0,0,0,419.377,204Z" data-name="<Path>"></path><path fill="url(#d)" d="M121.964,131.547a9.857,9.857,0,0,0,10-9.83A34.782,34.782,0,0,1,166.852,87H344.973l-22.626,22.366a9.947,9.947,0,1,0,14.114,14.021l39.778-39.631a10.009,10.009,0,0,0,0-14.178L336.461,29.954a10,10,0,0,0-14.142.027,10.207,10.207,0,0,0,.028,14.312L344.973,67H166.852a54.8,54.8,0,0,0-54.888,54.717A9.857,9.857,0,0,0,121.964,131.547Z" data-name="<Path>"></path><path fill="url(#e)" d="M390.036,380.453a9.857,9.857,0,0,0-10,9.83A34.782,34.782,0,0,1,345.148,425H167.027l22.626-22.366a9.9,9.9,0,0,0,.028-14.057,10,10,0,0,0-14.142.014l-39.778,39.643a10.018,10.018,0,0,0,0,14.185l39.778,39.625a10,10,0,0,0,14.142-.025,10.207,10.207,0,0,0-.028-14.312L167.027,445H345.148a54.8,54.8,0,0,0,54.888-54.717A9.857,9.857,0,0,0,390.036,380.453Z" data-name="<Path>"></path></g></svg>
+                    </div>
+                    <div class="col3">
+                        <div class="amount">
+                            <label id="amount-text" name="amount2" for="amount2">Converted to</label><br>
+                            <div class="input-container">
+                                <input class="amount-input" type="number" id="amount2">
+                                <div class="currency-select">
+                                <select id="currencySelect2" onchange="updateOption(this)">
+                                    <option value="">----</option>
+                                    <option value="USD ($)">United States Dollar (USD) $</option>
+                                    <option value="EUR (€)">Euro (EUR) €</option>
+                                    <option value="JPY (¥)">Japanese Yen (JPY) ¥</option>
+                                    <option value="GBP (£)">British Pound (GBP) £</option>
+                                    <option value="CAD ($)">Canadian Dollar (CAD) $</option>
+                                    <option value="AUD ($)">Australian Dollar (AUD) $</option>
+                                    <option value="CHF (Fr)">Swiss Franc (CHF) Fr</option>
+                                    <option value="CNY (¥)">Chinese Yuan (CNY) ¥</option>
+                                    <option value="INR (₹)">Indian Rupee (INR) ₹</option>
+                                    <!-- Add more options here -->
+                                  </select>     
+                            </div>
+                            </div>
+                        </div>
+                        <!-- <div class="currency2">
+
+                        </div> -->
+                    </div>
+            </div>
+            <div class="exchange-box-2">
+                <div class="exchange-rate">
+                    <p>X.00 USD = Y.00 INR</p>
+                </div>
+                <div class="convert-button">
+                    <button type="submit">Convert</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="back-down">
+
+        </div>
+    </div>
+</body>
+</html>
