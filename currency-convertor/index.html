@@ -34,15 +34,15 @@
                                 <div class="currency-select">
                                 <select id="currencySelect1" onchange="updateOption(this)">
                                     <option value="">----</option>
-                                    <option value="USD ($)">United States Dollar (USD) $</option>
-                                    <option value="EUR (€)">Euro (EUR) €</option>
-                                    <option value="JPY (¥)">Japanese Yen (JPY) ¥</option>
-                                    <option value="GBP (£)">British Pound (GBP) £</option>
-                                    <option value="CAD ($)">Canadian Dollar (CAD) $</option>
-                                    <option value="AUD ($)">Australian Dollar (AUD) $</option>
-                                    <option value="CHF (Fr)">Swiss Franc (CHF) Fr</option>
-                                    <option value="CNY (¥)">Chinese Yuan (CNY) ¥</option>
-                                    <option value="INR (₹)">Indian Rupee (INR) ₹</option>
+                                    <option id="USD ($)" value="USD">United States Dollar (USD) $</option>
+                                    <option id="EUR (€)" value="EUR">Euro (EUR) €</option>
+                                    <option id="JPY (¥)" value="JPY">Japanese Yen (JPY) ¥</option>
+                                    <option id="GBP (£)" value="GBP">British Pound (GBP) £</option>
+                                    <option id="CAD ($)" value="CAD">Canadian Dollar (CAD) $</option>
+                                    <option id="AUD ($)" value="AUD">Australian Dollar (AUD) $</option>
+                                    <option id="CHF (Fr)" value="CHF">Swiss Franc (CHF) Fr</option>
+                                    <option id="CNY (¥)" value="CNY">Chinese Yuan (CNY) ¥</option>
+                                    <option id="INR (₹)" value="INR">Indian Rupee (INR) ₹</option>
                                     <!-- Add more options here -->
                                   </select>
                             </div>
@@ -63,15 +63,15 @@
                                 <div class="currency-select">
                                 <select id="currencySelect2" onchange="updateOption(this)">
                                     <option value="">----</option>
-                                    <option value="USD ($)">United States Dollar (USD) $</option>
-                                    <option value="EUR (€)">Euro (EUR) €</option>
-                                    <option value="JPY (¥)">Japanese Yen (JPY) ¥</option>
-                                    <option value="GBP (£)">British Pound (GBP) £</option>
-                                    <option value="CAD ($)">Canadian Dollar (CAD) $</option>
-                                    <option value="AUD ($)">Australian Dollar (AUD) $</option>
-                                    <option value="CHF (Fr)">Swiss Franc (CHF) Fr</option>
-                                    <option value="CNY (¥)">Chinese Yuan (CNY) ¥</option>
-                                    <option value="INR (₹)">Indian Rupee (INR) ₹</option>
+                                    <option id="USD ($)" value="USD">United States Dollar (USD) $</option>
+                                    <option id="EUR (€)" value="EUR">Euro (EUR) €</option>
+                                    <option id="JPY (¥)" value="JPY">Japanese Yen (JPY) ¥</option>
+                                    <option id="GBP (£)" value="GBP">British Pound (GBP) £</option>
+                                    <option id="CAD ($)" value="CAD">Canadian Dollar (CAD) $</option>
+                                    <option id="AUD ($)" value="AUD">Australian Dollar (AUD) $</option>
+                                    <option id="CHF (Fr)" value="CHF">Swiss Franc (CHF) Fr</option>
+                                    <option id="CNY (¥)" value="CNY">Chinese Yuan (CNY) ¥</option>
+                                    <option id="INR (₹)" value="INR">Indian Rupee (INR) ₹</option>
                                     <!-- Add more options here -->
                                   </select>     
                             </div>
@@ -84,10 +84,10 @@
             </div>
             <div class="exchange-box-2">
                 <div class="exchange-rate">
-                    <p>X.00 USD = Y.00 INR</p>
+                    <p id="exchange-rate-text">X.00 USD = Y.00 INR</p>
                 </div>
-                <div class="convert-button">
-                    <button type="submit">Convert</button>
+                <div>
+                    <button class="convert-button" type="submit" >Convert</button>
                 </div>
             </div>
             </div>

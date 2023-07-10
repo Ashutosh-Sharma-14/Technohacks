@@ -60,7 +60,7 @@
 }
 
 .exchange-box-1{
-    position: absolute;
+    position: relative;
     /* border: 1px solid black; */
     width: 80%;
     height: 150px;
@@ -71,20 +71,44 @@
     padding-top: 40px;
 }
 
-.exchange-box-2{
-    position: relative;
-    background-color: antiquewhite;
-    /* top: 80%;
-    left: 10%; */
-    width: 80%;
+.exchange-box-2{                     
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    /* background: blue; */
+    justify-content: space-between;
+    padding: 0 10%;
+
+}
+
+#exchange-rate-text{
+    font-size: smaller;
 }
 
 .exchange-logo{
     width: 40px;
     height: 40px;
+}
+
+.convert-button{
+    background-color: #ff2020; /* Red color */
+    color: #FFFFFF; /* Text color */
+    padding: 0; /* Adjust padding as needed */
+    border: none;
+    border-radius: 10px; /* Adjust border radius for curved edges */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Accurate shadow */
+    transition: background-color 0.1s, transform 0.1s;
+    height: 2rem;
+    width: 12rem;
+    margin-top: -20px;
+    margin-right: 1.0rem;
+}
+
+.convert-button:hover{
+    background-color: #CC0000;
+    cursor: pointer;
+}
+
+.convert-button:active{
+    transform: scale(1.08);
 }
 
 .col1{

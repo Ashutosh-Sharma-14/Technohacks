@@ -1,3 +1,4 @@
+// changes the full form of the option to their abbreviation for better experience
 let previousOptionText = '';
 
 function updateOption(selectElement) {
@@ -14,6 +15,37 @@ function updateOption(selectElement) {
   previousOptionValue = selectedOption.value;
   
   // Change the displayed option text to abbreviation
-  selectedOption.text = selectedOption.value;
+  selectedOption.text = selectedOption.id;
+}
+
+// on button click convert the values
+document.addEventListener("DOMContentLoaded", function () {
+  const convertButton = document.querySelector(".convert-button");
+  convertButton.addEventListener("click", convertCurrency);
+});
+
+function convertCurrency() {
+  const amount1 = document.getElementById("amount1").value;
+  const currency1 = document.getElementById("currencySelect1").value;
+  const currency2 = document.getElementById("currencySelect2").value;
+  const amount2Element = document.getElementById("amount2");
+  const exchangeRate = document.getElementById("exchange-rate-text");
+
+  // Perform currency conversion API call here
+  // Replace "YOUR_API_KEY" with your actual API key
+  const apiEndpoint = `https://v6.exchangerate-api.com/v6/c272ab0ebda9f0b815e30ec9/pair/${currency1}/${currency2}`;
+
+  fetch(apiEndpoint)
+    .then(response => response.json())
+    .then(data => {
+      const rate = data.conversion_rate;
+      const convertedAmount = amount1*rate;
+      amount2Element.value = convertedAmount.toFixed(4);
+      exchangeRate.textContent = `1 ${currency1} = ${rate} ${currency2}`;
+    })
+    .catch(error => {
+      console.log("Error:", error);
+      amount2Element.value = "";
+    });
 }
 
