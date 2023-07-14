@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(249, 239, 220);
+    /* margin: 40px; */
+}
+
+.container-fluid{
+    margin: 40px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+}
+
+#navbar{
+    font-size: 1.15rem;
+    background-color: rgb(246, 222, 178);
+}
+
+#footer-section{
+    background-color: rgb(246, 222, 178);
+}
+
+i{
+    color: red;
+    margin-left: 5px;
+}
+
+#title-section{
+    margin: 80px;
+}
+
+#title{
+    color: rgb(143, 22, 22);
+    font-weight: 500;
+}
+
+#quote{
+    margin: 100px;
+}
+
+#image{
+    object-fit: fill;
+}
+
+.statistics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#statistics-card{
+    background-color: rgb(246, 222, 178);
+    color: black;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+blockquote{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#cta-section{
+    margin-left: 50px;
+    margin-right: 50px;
+}
